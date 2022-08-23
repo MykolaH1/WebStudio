@@ -1,0 +1,170 @@
+.portfolio-page{
+   
+}
+
+.cards__list {
+ 
+
+   @media screen and (min-width: 480px){
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   @media screen and (min-width: 768px){
+      max-width: 768px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+   }
+   @media screen and (min-width: 1200px){
+      max-width: 1200px;
+   }
+}
+.card:not(:last-child){
+   @media screen and (max-width:767px) {
+      margin-bottom: 30px;
+   }
+   
+}
+.card {
+   transition: box-shadow $cubic;
+
+   &:hover{
+      box-shadow: $card-shadow 
+   }
+
+   @media screen and (min-width: 480px){
+      max-width: 450px;
+   }
+   @media screen and (min-width: 768px){
+      max-width: 354px;
+   }
+   @media screen and (min-width: 1200px){
+      max-width: 370px;
+   }
+}
+.card__item {
+   overflow: hidden;
+   position: relative;
+
+   @media screen and (min-width: 480px){
+      
+      
+   }
+   @media screen and (min-width: 768px){
+      
+   }
+   @media screen and (min-width: 1200px){
+
+   }
+}
+.card__overflow {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+
+   width: 100%;
+   height: 100%;
+
+   transform: translateY(100%);
+   transition: transform $cubic;
+   overflow: hidden;
+
+   .card:hover &{
+   transform: translateY(0);
+   }
+
+   @media screen and (min-width: 480px){
+      
+   }
+   @media screen and (min-width: 768px){
+      
+   }
+   @media screen and (min-width: 1200px){
+
+   }
+}
+.card__text {
+   display: inline-block;
+   margin: 0;
+   font-size: 16px;
+   line-height: 1.56;
+   width: 100%;
+   height: 100%;
+   padding: 24px;
+   letter-spacing: 0.03em;
+
+   color: $background-color;
+   background-color: $card-bg;
+
+   @media screen and (min-width: 480px){
+      font-size: 18px;
+      padding: 77px 24px;
+   }
+   @media screen and (min-width: 768px){
+      
+   }
+   @media screen and (min-width: 1200px){
+      padding: 63px 24px;
+   }
+}
+.card__name {
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 24px;
+
+   display: block;
+   border: 1px solid $card-color;
+
+   @media screen and (min-width: 480px){
+      
+   }
+   @media screen and (min-width: 768px){
+      
+   }
+   @media screen and (min-width: 1200px){
+
+   }
+}
+.card__title {
+   margin-top: 0;
+   margin-bottom: 4px;
+
+   color: $title-text-color;
+
+   font-size: 18px;
+   line-height: 2;
+   letter-spacing: 0.06em;
+
+   @media screen and (min-width: 480px){
+      
+   }
+   @media screen and (min-width: 768px){
+      
+   }
+   @media screen and (min-width: 1200px){
+
+   }
+}
+.card__sub-title {
+   margin-top: 0;
+   margin-bottom: 0;
+
+   font-size: 16px;
+   line-height: 1.88;
+
+   @media screen and (min-width: 480px){
+      
+   }
+   @media screen and (min-width: 768px){
+      
+   }
+   @media screen and (min-width: 1200px){
+
+   }
+}
+.card__img{
+   display: block;
+   max-width: 100%;
+   height: auto;
+}

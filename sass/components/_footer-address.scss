@@ -1,0 +1,43 @@
+.page-footer__address {
+   margin-bottom: 60px;
+   @media screen and (min-width: 768px){
+      margin-right: 156px;
+   }
+   @media screen and (min-width: 1200px){
+      margin-right: 70px;
+      margin-bottom: 0;
+   }
+}
+
+.page-footer__logo {
+   color: $background-color;
+   @media screen and (max-width: 768px) {
+      padding-top: 0;
+   }
+}
+
+.page-footer address{
+   margin-top: 20px;
+}
+.navigation__link{
+   color: $silver-color;
+
+   line-height: 1.71;
+   font-style: normal;
+   text-decoration: none;
+
+   transition: color $cubic;
+
+   &:hover, &:focus{
+      color: $accent-color;
+   }
+}
+.navigation:not(:last-child) {
+   margin-bottom: 8px;
+   @media screen and (min-width: 1200px){
+      margin-bottom: 9px;
+   }
+}
+.navigation__link-address{
+   color: $background-color;
+}

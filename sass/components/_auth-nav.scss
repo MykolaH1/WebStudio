@@ -1,0 +1,83 @@
+.auth-nav {
+    margin-bottom: 64px;
+   @media screen and (max-width: 767px){
+      display: flex;
+      flex-direction: column-reverse;
+      flex-grow: 1;
+   }
+
+   @media screen and (min-width: 768px){
+      padding: 21px 15px 0 84px;
+      margin-bottom: 0;
+   }
+   @media screen and (min-width: 1200px){
+      display: flex;
+      gap: 30px;
+      // padding: 0;
+      margin-left: auto;
+   }
+}
+
+.auth-nav__link {
+   color: #757575;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 1.16;
+   letter-spacing: 0.02em;
+   text-decoration: none;
+
+   transition: color $cubic;
+
+   @media screen and (min-width:768px) {
+      font-size: 12px;
+      display: flex;
+      margin-bottom: 10px;
+   }
+}
+
+.auth-nav__item-phone{
+   @media screen and (max-width: 767px){
+      margin-bottom: 32px;
+   }
+}
+
+
+
+.auth-nav__link {
+
+   color: $primary-text-color;
+   
+
+   &:hover, &:focus{
+      color: $accent-color;
+   }
+}
+.auth-nav__link-phone{
+   @media screen and (max-width: 767px){
+      font-size: 34px;
+      color: #2196F3;
+   }
+}
+.auth-nav__icon{
+   @media screen and (max-width: 767px) {
+      display: none;
+   }
+   @media screen and (min-width: 480px){
+      margin-right: 8px;
+   }
+   @media screen and (min-width: 768px){
+      fill: $primary-text-color;
+
+      transition: fill $cubic;
+   .auth-nav__link:hover &, 
+   .auth-nav__link:focus & {
+      fill: $accent-color;
+   }
+   }
+}
+.auth-nav__icon--phone{
+   @media screen and (min-width: 768px){
+      width: 10px;
+      height: 16px;
+   }
+}
